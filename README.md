@@ -1,21 +1,21 @@
-JSetup(jse)-
+#JSetup(jse)-
 
 
 JSetup is installer for installing plugin of java jar applications. JSetup used script file to install the jar file
 You must need jsetup to install jsetup plugin i.e java jar applications. JSetup is only for linux based os.
 
-Installing:
+#Installing:
 Clone this repo to your desktop or download this
 cd to the directory
 open terminal type chmod +x install
 then type sudo ./install
 that's done to check type jse
 
-Installing Java Jar Application:
+#Installing Java Jar Application:
 Make a file name anything let's take hello_world
 so paste the following 
-
-# Setup file
+======================
+ Setup file
 name = Hello World
 
 run = hello_jse
@@ -24,7 +24,7 @@ author = LittlEvil
 
 jar_path = hello.jar
 
-
+=======================
 
 edit as your view
 
