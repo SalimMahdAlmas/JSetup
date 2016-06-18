@@ -15,12 +15,12 @@ public class Main  {
         stringBuilder.append("JSetup v1.0.2 - a tool for installing Java Jar Packages").append("\n");
         stringBuilder.append("Copyright 2016 Sahid Almas <sahidalmas@gmail.com>\n\n");
         stringBuilder.append("usage: jse\n");
-        stringBuilder.append(" --install,--INSTALL <input>        To install jar packages (root)\n");
-        stringBuilder.append(" --remove,--REMOVE <RUN_NAME>       To remove the jar packages that is installed(root)\n");
-        stringBuilder.append(" --list,--LIST                      To List all the packages installed\n");
-        stringBuilder.append(" --info,--INFO <RUN_NAME>           To get info about the packages \n");
-        stringBuilder.append(" --update,--UPDATE                  To Update (root)\n");
-        stringBuilder.append(" --help,--HELP                      To see this\n\n");
+        stringBuilder.append(" --install,--INSTALL <input>      To install jar packages (root)\n");
+        stringBuilder.append(" --remove,--REMOVE <RUN_NAME>     To remove the jar packages that is installed(root)\n");
+        stringBuilder.append(" --list,--LIST                    To List all the packages installed\n");
+        stringBuilder.append(" --info,--INFO <RUN_NAME>         To get info about the packages \n");
+        stringBuilder.append(" --update,--UPDATE                To Update (root)\n");
+        stringBuilder.append(" --help,--HELP                    To see this\n\n");
         stringBuilder.append(
                 "For additional info, see: http://github.com/SahidAlmas/JSetup");
         String USAGE = stringBuilder.toString();

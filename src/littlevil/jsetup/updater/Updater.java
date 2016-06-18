@@ -6,7 +6,6 @@ import littlevil.jsetup.util.ConfigParser;
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Objects;
 
@@ -31,13 +30,13 @@ public class Updater {
 
     public void update() {
         try {
-            saveUrl("/usr/local/bin/jsetup.jar",Config.CONFIG_LINK);
+            saveUrl("/usr/local/bin/jsetup.jar",Config.JAR_LINK);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
     public void saveUrl(final String filename, final String urlString)
-            throws MalformedURLException, IOException {
+            throws IOException {
         BufferedInputStream in = null;
         FileOutputStream fout = null;
         try {
