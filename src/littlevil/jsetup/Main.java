@@ -19,7 +19,7 @@ public class Main  {
         stringBuilder.append(" --remove,--REMOVE <RUN_NAME>       To remove the jar packages that is installed(root)\n");
         stringBuilder.append(" --list,--LIST                      To List all the packages installed\n");
         stringBuilder.append(" --info,--INFO <RUN_NAME>           To get info about the packages \n");
-        stringBuilder.append(" --update,--UPDATE                  To Update (root)");
+        stringBuilder.append(" --update,--UPDATE                  To Update (root)\n");
         stringBuilder.append(" --help,--HELP                      To see this\n\n");
         stringBuilder.append(
                 "For additional info, see: http://github.com/SahidAlmas/JSetup");
