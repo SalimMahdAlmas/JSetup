@@ -14,8 +14,8 @@ that's done to check type jse
 #Installing Java Jar Application:
 Make a file name anything let's take hello_world
 so paste the following 
-======================
- Setup file
+
+START
 name = Hello World
 
 run = hello_jse
@@ -23,8 +23,7 @@ run = hello_jse
 author = LittlEvil
 
 jar_path = hello.jar
-
-=======================
+END
 
 edit as your view
 
@@ -33,3 +32,4 @@ then open terminal type jse --install hello_world
 that's done . To check is it installed or not
 type hello_jse or jse --list
 
+#Thank you
