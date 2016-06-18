@@ -73,7 +73,7 @@ while True:
     print(os.system("git init"))
     print(os.system("git add ."))
     print(os.system("git commit -m "+commit_nam))
-    print(os.system("git push https://github.com/AndroidFire/IPE.git master"))
+    print(os.system("git push https://github.com/SahidAlmas/JSetup.git master"))
 
 
     break
