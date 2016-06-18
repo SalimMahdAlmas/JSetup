@@ -1,35 +1,49 @@
-#JSetup(jse)-
+JSetup
+=========
+
+**A smart way to install java jar applications**
 
 
-JSetup is installer for installing plugin of java jar applications. JSetup used script file to install the jar file
-You must need jsetup to install jsetup plugin i.e java jar applications. JSetup is only for linux based os.
+**Current version : 1.01**
 
-#Installing:
-Clone this repo to your desktop or download this
-cd to the directory
-open terminal type chmod +x install
-then type sudo ./install
-that's done to check type jse
+**Introduction**
+So JSetup is tool which is used to install java jar applications in the runtime.
+This is the most innovative way to install java jar applications.this project is
+growing day by day.
 
-#Installing Java Jar Application:
-Make a file name anything let's take hello_world
-so paste the following 
+**Compatible**
+This is made for linux system so it will be compatible only for linux
 
-START
-name = Hello World
+**Features**
 
-run = hello_jse
+>>-Install java jar applications
+>>-Remove it when necessary
+>>-Get list of all packages installed on the system
+>>-Light weight
+>>-So on
 
-author = LittlEvil
+**Downloads**
+Clone this repo or https://github.com/SahidAlmas/JSetup/archive/master.zip
 
-jar_path = hello.jar
-END
+**How to install it**
+>>-Download this repo.
+>>-Extract the zip open terminal.
+>>-Cd to extracted folder and type chmod +x ./install
+>>-Then ./install
+>>-To check type jse
 
-edit as your view
+**How to install java jar applications**
+>>-Make a file let's name it hello_world
+>>-Paste the following.
+>>>-name = Hello World
 
-then cd to the directory where you have made the hello_world
-then open terminal type jse --install hello_world
-that's done . To check is it installed or not
-type hello_jse or jse --list
+>>>-run = hello_jse
 
-#Thank you
+>>>-author = LittlEvil
+
+>>>-jar_path = hello.jar
+>>-then open to terminal cd to these directory
+>>-Type jse --install hello_world
+>>-You are done. To check type hello_jse
+
+**Thank You**
