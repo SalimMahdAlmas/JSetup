@@ -1,0 +1,7 @@
+#!/bin/bash
+mkdir /usr/local/bin/jsetup
+cp run_by /usr/local/bin/jsetup/run_by
+cp jsetup /usr/local/bin/jse
+cp jsetup.jar /usr/local/bin/jsetup.jar
+chmod +x /usr/local/bin/jse
+echo "Installed"

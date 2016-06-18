@@ -1,0 +1,9 @@
+# Setup file
+name = Hello World
+
+run = hello_jse
+
+author = LittlEvil
+
+jar_path = hello.jar
+
