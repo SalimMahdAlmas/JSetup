@@ -2,21 +2,24 @@ package littlevil.jsetup;
 
 import littlevil.jsetup.core.*;
 import littlevil.jsetup.core.Compiler;
+import littlevil.jsetup.updater.Updater;
 
 import java.io.File;
+import java.util.Scanner;
 
 public class Main  {
 
 
     public static void main(String[] args) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("JSetup v1.0.1 - a tool for installing Java Jar Packages").append("\n");
+        stringBuilder.append("JSetup v1.0.2 - a tool for installing Java Jar Packages").append("\n");
         stringBuilder.append("Copyright 2016 Sahid Almas <sahidalmas@gmail.com>\n\n");
         stringBuilder.append("usage: jse\n");
-        stringBuilder.append(" --install,--INSTALL <input>        To install jar packages\n");
-        stringBuilder.append(" --remove,--REMOVE <RUN_NAME>       To remove the jar packages that is installed\n");
+        stringBuilder.append(" --install,--INSTALL <input>        To install jar packages (root)\n");
+        stringBuilder.append(" --remove,--REMOVE <RUN_NAME>       To remove the jar packages that is installed(root)\n");
         stringBuilder.append(" --list,--LIST                      To List all the packages installed\n");
         stringBuilder.append(" --info,--INFO <RUN_NAME>           To get info about the packages \n");
+        stringBuilder.append(" --update,--UPDATE                  To Update (root)");
         stringBuilder.append(" --help,--HELP                      To see this\n\n");
         stringBuilder.append(
                 "For additional info, see: http://github.com/SahidAlmas/JSetup");
@@ -97,7 +100,28 @@ public class Main  {
                 }
 
             }
+            else if (command.equalsIgnoreCase("--update")) {
+                Updater updater = Updater.makeUpdater();
+                if (updater.checkUpdate()) {
 
+                    System.out.println("[*] Update is available");
+                    System.out.println("[*] Would you like to update (y/N)");
+                    Scanner scanner = new Scanner(System.in);
+                    if (scanner.next().equalsIgnoreCase("y")) {
+                        if (Compiler.checkRoot()) {
+                            System.out.println("[*] Downloading");
+                            updater.update();
+                            System.out.println("[*] Updated");
+                        }else {
+                            System.out.println("[ERROR] Root access not found");
+                        }
+                    }else {
+                        System.out.println("Thank you");
+                    }
+                }else {
+                    System.out.println("[*] No new update available");
+                }
+            }
             else {
                 System.out.println(USAGE);
             }
