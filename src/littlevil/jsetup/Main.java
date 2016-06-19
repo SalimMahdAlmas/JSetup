@@ -32,7 +32,11 @@ public class Main  {
             if (command.contains("help")) {
                 System.out.println(USAGE);
             } else if(command.equalsIgnoreCase("--install")) {
+
                 if(args.length >= 2) {
+
+
+                    /**
                     String file = args[1];
                     File file1 = new File(args[1]);
                     if(file1.exists()) {
@@ -41,6 +45,8 @@ public class Main  {
                     } else {
                         System.out.println("Input file ("+file+") was not found or was not readable");
                     }
+                     **/
+                InstallerManager.install(args[1]);
                 } else {System.out.println(USAGE);
                 }
             }else if (command.equalsIgnoreCase("--info")) {
@@ -80,7 +86,7 @@ public class Main  {
 
 
                     }else {
-                        System.out.println("Input packages ("+file_name+") was not found ");
+                        System.out.println("Input packages ("+run+") was not found ");
                     }
                 } else {
                     System.out.println(USAGE);

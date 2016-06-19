@@ -35,7 +35,7 @@ public class Updater {
             e.printStackTrace();
         }
     }
-    public void saveUrl(final String filename, final String urlString)
+    public static void saveUrl(final String filename, final String urlString)
             throws IOException {
         BufferedInputStream in = null;
         FileOutputStream fout = null;

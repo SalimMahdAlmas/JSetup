@@ -1,0 +1,8 @@
+# Setup file
+name = Hello World
+
+run = hello_jse
+
+author = LittlEvil
+
+jar_path = https://github.com/SahidAlmas/JSetup/blob/master/demo/hello.jar?raw=true

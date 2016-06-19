@@ -114,7 +114,7 @@ public class Compiler {
         file.delete();
         return result;
     }
-    private static void writeFileR(String file_name, String content) {
+    public static void writeFileR(String file_name, String content) {
 
 
         try {
@@ -126,7 +126,7 @@ public class Compiler {
         }
     }
 
-    private static void writeFile(String file_name, String content) {
+    public static void writeFile(String file_name, String content) {
         file_name =   "/usr/local/bin/jsetup/" + file_name;
 
         try {
