@@ -55,10 +55,29 @@ then open to terminal cd to these directory
 Type jse --install hello_world
 You are done. To check type hello_jse
 ```
+#How to install java jar applications from thw web
+```
+Make a file let's name it hello_world
+Paste the following.
+name = Hello World
+
+run = hello_jse
+
+author = LittlEvil
+jar_path = link_to_web
+
+then upload these to web
+let the link of the these be x
+
+then open to terminal cd to these directory
+Type jse --install x
+You are done. To check type hello_jse
+```
+
 
 #License
 
-A short snippet describing the license (MIT, Apache, etc.)
+MIT
 
 **Thank You**
 >>>>>>> 88bcbdd375f1f70b192b9d325247cca957da1040
