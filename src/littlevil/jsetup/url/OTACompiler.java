@@ -58,7 +58,7 @@ public class OTACompiler {
 
                         if (checkRoot()) {
                             System.out.println("[*] Downloading Jar File");
-                            Updater.saveUrl("/usr/local/bin/"+run_name+".jar",jar_path);
+                            Updater.saveUrl("/usr/local/bin/jsetup/"+run_name+".jar",jar_path);
 
                             System.out.println("[*] Adding Some Hook to the System");
 
@@ -77,7 +77,7 @@ public class OTACompiler {
                     } catch (MalformedURLException e) {
                         System.out.println("[ERROR] Malformed URL Found in the script");
                     } catch (IOException e) {
-                        System.out.println("[ERROR] No Internet Connection");
+                        e.printStackTrace();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

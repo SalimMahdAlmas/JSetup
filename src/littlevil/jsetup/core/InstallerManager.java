@@ -1,5 +1,7 @@
 package littlevil.jsetup.core;
 
+import littlevil.jsetup.url.OTAInterpreter;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -9,6 +11,7 @@ public class InstallerManager {
 
         try {
             new URL(cur);
+            OTAInterpreter.interprets(cur);
         } catch (MalformedURLException e) {
 
             File file1 = new File(cur);

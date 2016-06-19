@@ -30,6 +30,9 @@ public class ConfigParser {
     public String getContent(String link) throws IOException {
         URL url = new URL(link);
         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+        if (httpURLConnection.getResponseCode() != 200) {
+            System.out.println("[ERROR] Unexpected Error Occurred");
+        }
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));
         String input;
         StringBuilder stringBuilder = new StringBuilder();
